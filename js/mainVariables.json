@@ -1,0 +1,11 @@
+[
+{
+"@media-small_maxWidth":"480px",
+"@media-med_minWidth": "@media-small_maxWidth",
+"@media-med_maxWidth":"768px",
+"@media-large_minWidth": "@media-med_maxWidth",
+"@wrapper_background": "#f8f8f8",
+"@wrapper_sw":"300px"
+
+}
+]
