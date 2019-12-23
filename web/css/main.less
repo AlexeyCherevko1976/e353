@@ -1,0 +1,108 @@
+@import "variables.less";
+@import "function.less";
+@import "main-sm.less";
+@import "main-md.less";
+@import "main-lg.less";
+
+
+.wrapper{background: @wrapper_background;} 
+  .header{background:#f3f6f8;color: blue;a{text-decoration: none;font-size: 12px;font-weight: bold;color:#162b2a;font-family: Arial, serif;&:hover{color:#252f96;}}}
+    //.header_btn{bottom:0px;}
+    .header-basket-lbl_txt{font-weight: bold;color:#ffffff;font-family: Arial, serif;text-align: center;}
+
+
+    .header_lock{background:#db001b;&:hover{background:#ea142e};} 
+      .header_lock_txt{font-size:16px;color:#ffffff;}
+      .header_reg{font-size:16px;color:#ffffff;}
+        .reg_img{background-image: url(../img/main-reg_img.png);}
+      .reg_img{.posAbs(0px,0px,26px,21px);}
+      .reg_txt{.posAbs(3px,26px,94px,9px);}
+        //.reg_txt{font-size: 12px;font-weight: bold;color:#dd162f;&:hover{color:#252f96;}}
+  .headerBlurb-inf_tlf{font-size:16px;font-weight: bold;color:#323338;border-bottom: 2px dashed #323338}
+  .headerBlurb-inf_txt{font-size:11px;color:#aabbc4;}
+
+  
+  .searchSite{background:#323338;border-radius: 3px;}
+        .tablePart-txt{font-family: Arial, serif;color:@colorTablePart;}
+        .tablePart_header{font-size:20px;font-family:Arial;font-weight: bold;color:@colorTablePart;background:@colorPhone;}
+.searchSite_search {
+ .posAbs(13px,15px,151px,22px);
+  padding-left: 30px;
+  font-family: Arial, serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #000000;
+  background: url(../img/main-searchSite_search.png) no-repeat center left;
+}
+.searchSite_btn{background-image: url(../img/main-searchSite_btn.png);&:hover{background-image: url(../img/main-searchSite_btn-hover.png);}}    
+
+.tablePart{a{text-decoration: none;color:#323338;&:hover{color:#252f96;};}}
+.tablePart_img{}
+span{line-height: 0.5;}
+//.tablePart{font-weight: bolder;font-size: 20px;}
+    .tablePart-engine{background:@colorPhone;}    
+    .tablePart-chassis{background:@colorPhone;}    
+    .tablePart-bodyParts{background:@colorPhone;}
+    
+    .tablePart-transmission{background:@colorPhone;}
+ 
+  .options{background:@colorOptions;}
+    .optionsCell_header{font-size: 14px;font-weight:bolder;font-family: Arial, serif;}
+    .optionsCell_txt{font-size:12px;font-weight:bolder;font-family: Arial, serif;}
+  
+  .newArrival{background:@wrapper_background;} //@wrapper_background
+    .newArrival-header_txt1{font-size:19px;font-weight:bolder;font-family: Arial, serif; text-align: center;}
+    .newArrival-header_txt2{font-size:19px;font-weight:bolder;font-family: Arial, serif; text-align: center;}
+
+      .product-details{background:@colorPhone;}
+        .product-details_status{font-size:12px;color:#91a7b3;font-family: Arial, serif;}
+        .product-details_model{font-size:16px;color:@colorTablePart;font-weight:bolder;font-family: Arial, serif;}
+        .product-details_yearOfCar{font-size:14px;color:@colorTablePart;font-family: Arial, serif;}
+  .newArrival_seeAll{a{text-decoration: none;font-size:19px;text-align:center;color:#8598a2;font-family: Arial, serif;border-bottom: 1px dashed #8598a2;}}
+.card{background: @colorPhone;}
+  .card_header1{font-size:18px;color:@colorTablePart;font-weight:bolder;font-family: Arial, serif;}
+  .card_header2{font-size:18px;color:@colorTablePart;font-weight:bolder;font-family: Arial, serif;}
+  .card_text1{font-size:14px;color:@colorTablePart;font-family: Arial, serif;}
+  .card_button{border-radius: 5px; color:#db001b; border: 2px solid #db001b;}
+.sellOut{background: @colorPhone;} //
+    .sellOut-header1{font-size:21px;color:@colorTablePart;font-family: Arial, serif;font-weight:bolder;}
+    .sellOut-header2{font-size:21px;color:@colorTablePart;font-family: Arial, serif;font-weight:bolder;}
+    .sellOut-txt{font-size:15px;color:@colorTablePart;font-family: Arial, serif;}
+    .sellOut-button{border-radius: 5px; color:#db001b; border: 2px solid #db001b;}
+    .sellOut-img{background-image: url(../img/main-sellOut-img.png);}
+
+  .news-slide_header{font-size:20px;z-index: 2;text-align: center; font-weight: bolder;font-family: Arial, serif;}
+.news-slide_arrowLeft{z-index: 2;}
+.news-slide_arrowRight{z-index: 2;}
+.news-1{z-index: 1;}
+  .news-1-inf_data{color:#91a7b3;font-family: Arial, serif;}
+  .news-1-inf_header1{color:@colorTablePart;font-family: Arial, serif;font-weight:bolder;}
+  .news-1-inf_header2{color:@colorTablePart;font-family: Arial, serif;font-weight:bolder;}
+  .news-1-inf_txt1{color:@colorTablePart;font-family: Arial, serif;}
+  .news-1-inf_txt2{color:@colorTablePart;font-family: Arial, serif;}
+  .news-1-inf_txt3{color:@colorTablePart;font-family: Arial, serif;}
+
+.footer-question{background:#f4d219;}
+  .footer-question_header{font-size:19px;text-align:center;}
+  .footer-question_button{background:#db001b;border-radius: 5px; color:@colorPhone; border: 2px solid #db001b;}
+.footer-payment{background:@colorTablePart;
+    .str_header{font-size:18px;font-weight:bolder; color:#fefeff;font-family: Arial, serif;}
+    a{text-decoration: none;font-size:16px;color:#fefeff;font-family: Arial, serif;&:hover{color:#f4d219;}};
+}
+   //.str_txt{font-size: 16px;color:#ffffff;font-family: Arial, serif;}
+  .footer-payment_txt1{font-size:16px;color:#ffffff;font-family: Arial, serif;font-weight:bolder;text-align:center;}
+  .footer-payment_bottom{background:#fde30c; border: 2px solid #fde30c;border-radius: 5px;}
+  .footer-payment_txt2{font-size:16px;color:#ffffff;font-family: Arial, serif;font-weight:bolder;text-align:center;}
+  .footer-payment_img1{background:@colorTablePart;background-image: url(../img/main-payment_img1.png);}
+  .footer-payment_txt3{font-size:16px;color:#ffffff;font-family: Arial, serif;font-weight:bolder;text-align:center;}
+  .footer-payment_img2{background:@colorTablePart;}
+
+.footer-conections{.posAbs(534px,0px,300px,75px);background:#26272b;}
+  .conections_client{font-size: 12px;color:#7c848b;}
+  .conections_producer{font-size: 12px;color:#7c848b;}
+
+
+
+
+ 
