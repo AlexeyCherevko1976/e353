@@ -1,0 +1,42 @@
+.flex-container{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap-reverse;
+	flex-wrap: wrap-reverse;/**/
+	justify-content: space-around;
+	height: 400px;
+}
+.order_1{
+	order: -1;
+}
+.flex02{
+	flex: 0 0 auto;
+}
+.flex04{
+	flex: 1 0 auto;
+}
+.block{
+	width: 100px;
+	height: 50px;/**/
+	border: 4px solid black;
+	/*-webkit-flex: 3 1 100px;*/
+	-ms-flex: 0 0 auto;
+	
+}
+.block1{
+	background-color: red;
+	align-self: flex-start;
+}
+.block2{
+	background-color: olive;
+	align-self: center;
+}
+.block3{
+	background-color: lime;
+	align-self: flex-end;
+}
+.align-selfEnd{
+	align-self: flex-end;
+}
