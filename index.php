@@ -1,16 +1,23 @@
 <?
-if ($_SERVER['REQUEST_URI']=='/') $page='home';
-else{
-	$page=substr($_SERVER['REQUEST_URI'], 2);
-	if(!preg_match('/^[A-z0-9]{3,15}$/', $page)) exit('error url');
+
+
+if ( $_SERVER['REQUEST_URI'] == '/' ) $page = 'home';
+else {
+
+	$page = substr($_SERVER['REQUEST_URI'], 2);
+	if ( !preg_match('/^[A-z0-9]{3,15}$/', $page) ) exit('error url');
 }
 
-session_start();
-if(file_exists('all/'.$page.'.php')) include 'all/'.$page.'.php';
-else if($_SESSON['ulogin']==1 and file_exists('auth/'.$page.'.php')) include 'auth/'.$page.'.php';
-else if($_SESSON['auth']==1 and file_exists('guest/'.$page.'.php')) include 'guest/'.$page.'.php';
-else exit ('Страница 404');
-//echo $page;
 
+session_start();
+
+
+
+if ( file_exists('page/'.$page.'.php') ) include 'page/'.$page.'.php';
+
+//else if (file_exists('auth/'.$page.'.php') ) include 'auth/'.$page.'.php';
+//  $_SESSON['ulogin'] == 1 and 
+
+else exit('Страница 404');
 
 ?>
