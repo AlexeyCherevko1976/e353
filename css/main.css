@@ -1,3 +1,29 @@
 header{
-	height:100px;
+	height:50px;
+}
+main{
+	height: 100%;
+}
+.row{
+	height: 100%;
+}
+.sidebarLeft, .sidebarLeft, .content{
+	height: 600px;
+	/*width: 300px;*/
+}
+.sidebarLeft{
+	background: green;
+}
+.content{
+	background: olive;
+}
+.sidebarRight{
+	background: red;}
+.footer{
+	height: 200px;
+	background: white;
+}
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
 }
