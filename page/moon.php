@@ -53,7 +53,7 @@
 <main role="main" class="container">
 	<div class="row">
 		<div class="sidebarLeft col-12 col-lg-3 text-center text-uppercase align-middle">Привет!</div>
-		<div class="content col-12 col-lg-6"></div>
+		<div class="content col-12 col-lg-6"><div id="like_button_container"></div></div>
 		<div class="sidebarRight col-12 col-lg-3"></div>
 		<div class="footer col">footer</div>				
 	</div>
@@ -64,5 +64,12 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Загрузим React. -->
+  <!-- Примечание: для деплоя на продакшен замените окончание «development.js» на «production.min.js». -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Загрузим наш React-компонент. -->
+  <script src="page/like_button.js"></script>
   </body>
 </html>
