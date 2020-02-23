@@ -1,6 +1,7 @@
 <?
 
-
+include "eVebhuck.php";
+/*
 if ( $_SERVER['REQUEST_URI'] == '/' ) $page = 'moon';
 else {
 
@@ -19,5 +20,6 @@ if ( file_exists('page/'.$page.'.php') ) include 'page/'.$page.'.php';
 //  $_SESSON['ulogin'] == 1 and 
 
 else exit('Страница 404');
+*/
 
 ?>
